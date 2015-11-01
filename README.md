@@ -1,13 +1,15 @@
 React Transform Boilerplate
 =====================
 
+> The separate_server branch is an example of [combining with an existing server](https://webpack.github.io/docs/webpack-dev-server.html#combining-with-an-existing-server).
+
 A *new* Webpack boilerplate with:
 
 * hot reloading React components;
 * error handling inside component `render()` function;
 * error handling for syntax errors (thanks, **[@glenjamin](https://github.com/glenjamin)**!)
 
-Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.  
+Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.
 **[Does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
 
 [![react-transform channel on slack](https://img.shields.io/badge/slack-react--transform%40reactiflux-61DAFB.svg?style=flat-square)](http://www.reactiflux.com)

@@ -10,7 +10,11 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    // To teach webpack to make requests (for chunk loading or HMR) to the
+    // webpack-dev-server you need to provide a full URL in the
+    // output.publicPath option.
+    // SEE: https://webpack.github.io/docs/webpack-dev-server.html#combining-with-an-existing-server
+    publicPath: 'http://localhost:8080/static/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
