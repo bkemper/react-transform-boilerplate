@@ -4,7 +4,10 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-hot-middleware/client',
+    // The client requests to http://localhost:3000/__webpack_hmr would cancel
+    // probably because it's using the devServer port (3000) instead of the
+    // webpack-dev-server port (3030)
+    //'webpack-hot-middleware/client',
     './src/index'
   ],
   output: {
@@ -17,7 +20,8 @@ module.exports = {
     publicPath: 'http://localhost:8080/static/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    // SEE: https://github.com/gaearon/react-hot-loader/issues/127
+    //new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
   module: {

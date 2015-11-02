@@ -48,8 +48,7 @@
     "redbox-react": "^1.0.1",
     "rimraf": "^2.4.3",
     "webpack": "^1.9.6",
-    "webpack-dev-server": "^1.12.1",
-    "webpack-hot-middleware": "^2.4.1"
+    "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
     "react": "^0.14.0",
